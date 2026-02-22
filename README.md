@@ -1,11 +1,14 @@
 # Natural Language Processing
 ## Evan Scherrer - Project and Assignment Portfolio
 
-### Fortnight 1
+### Fortnight 1 - total 10xp
 Applied Exploration - using Transformers library
 * Demo'd to Jacob, Coleman, and Alex
 * **Earned 5 xp**
 * [`applied-exploration/F1_Applied_Exploration.ipynb`](./applied-exploration/F1_Applied_Exploration.ipynb)
+
+Core Practice
+* **Earned 5xp**
 
 ### Fortnight 2
 Applied Exploration - using LLM APIs
@@ -16,3 +19,6 @@ Creative Synthesis - extended implementation of byte-pair encoding
 * Demo'd to class
 * **Earned 6xp**
 * [creative-synthesis/byte-pair-encoding/](./creative-synthesis/byte-pair-encoding/bytepairencoding.py)
+
+Core Practice
+* **Earned 5xp**
