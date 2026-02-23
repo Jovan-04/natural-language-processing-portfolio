@@ -30,8 +30,30 @@ class BytePairEncoder:
         :return: The list of Pretokens. 
         :rtype: list[Pretoken]
         """
+        pretokens_text: list[str] = []        
         # TODO: make it split on whitespace and punctuation and preserve punc.
-        pretokens_text = text.split()
+        current_token = ""
+        for char in text:
+            # each of these special characters are their own (pre)token
+            if char in r"""`~!@#$%^&*()-_=+[{]}\|;:'",<.>/?""":
+                pretokens_text.append(current_token)
+                pretokens_text.append(char)
+                current_token = ""
+                continue
+
+            if char.isspace():
+                # merge all whitespace
+                if current_token == "Ġ":
+                    continue
+
+                pretokens_text.append(current_token)
+                current_token = "Ġ"
+                continue
+        
+            current_token += char
+
+        pretokens_text.append(current_token)
+
         pretokens: list[Pretoken] = []
 
         for pretoken in pretokens_text:
@@ -112,5 +134,30 @@ class BytePairEncoder:
 
         for pretoken in pretokens:
             tokens.extend(pretoken.get_tokens())
+
+        return tokens
+
+    def tokens_to_numbers(self, token_strings: list[str]) -> list[int]:
+        token_numbers: list[int] = []
+        # cache to avoid repeated lookups for large sequences of tokens
+        # not really sure how to handle unknown tokens
+        token_cache: dict[str, int] = { "[UNK]": -1 }
+
+        for token in token_strings:
+            if token not in token_cache:
+                token_cache[token] = self.vocabulary.index(token)
+
+            token_numbers.append(token_cache[token])
+
+        return token_numbers
+
+    def numbers_to_tokens(self, token_numbers: list[int]) -> list[str]:
+        tokens: list[str] = []
+
+        for token_number in token_numbers:
+            if token_number < len(self.vocabulary):
+                tokens.append(self.vocabulary[token_number])
+            else:
+                tokens.append("[UNK]")
 
         return tokens
