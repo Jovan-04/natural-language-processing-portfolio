@@ -10,7 +10,7 @@ Applied Exploration - using Transformers library
 Core Practice
 * **Earned 5xp**
 
-### Fortnight 2
+### Fortnight 2 - total 21xp
 Applied Exploration - using LLM APIs
 * **Earned 5 xp**
 * [`applied-exploration/F2_Applied_Exploration.ipynb`](./applied-exploration/F2_Applied_Exploration.ipynb)
@@ -19,6 +19,10 @@ Creative Synthesis - extended implementation of byte-pair encoding
 * Demo'd to class
 * **Earned 6xp**
 * [creative-synthesis/byte-pair-encoding/](./creative-synthesis/byte-pair-encoding/bytepairencoding.py)
+
+Creative Synthesis - unit tests for byte-pair encoding
+* Demo'd to class
+* **Earned 5xp**
 
 Core Practice
 * **Earned 5xp**
