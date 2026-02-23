@@ -15,6 +15,7 @@ class Pretoken:
         
         # we want to modify this pretoken so that it's the beginning of our characterized text
         self.text = a[0]
+        # we build the pretoken starting at the end of the original string
         for char in reversed(a[1:]):
             new_node = Pretoken(char)
             new_node.next = next_node
@@ -32,16 +33,20 @@ class Pretoken:
         :return: True if a change was made to the Pretoken, False otherwise. 
         :rtype: bool
         """
+        # pointers to traverse through the pretoken when we check for a merge
         current_node = self
         next_node = current_node.next
         made_change = False
 
         while current_node and next_node:
+            # if this node and the next can be combined into the token
+            # we're considering, we merge them
             if current_node.text + next_node.text == rule:
                 current_node.text = current_node.text + next_node.text
                 current_node.next = next_node.next
                 made_change = True
             
+            # move forward one step
             current_node = current_node.next
             if current_node is not None:
                 next_node = current_node.next
@@ -59,14 +64,10 @@ class Pretoken:
         tokens: list[str] = []
 
         current = self
-        while current.next:
+        while current:
             tokens.append(current.text)
             current = current.next
         
-        # the while loop doesn't include the text of the last ('current') token
-        # because it breaks from the loop when current.next is None
-        tokens.append(current.text)
-
         return tokens
 
 

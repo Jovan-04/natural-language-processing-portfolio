@@ -57,6 +57,8 @@ class BytePairEncoder:
         pretokens: list[Pretoken] = []
 
         for pretoken in pretokens_text:
+            if len(pretoken) == 0:
+                continue
             pretokens.append(Pretoken(pretoken))
 
         return pretokens
@@ -109,7 +111,6 @@ class BytePairEncoder:
 
             for pretoken, _ in corpus:
                 pretoken.apply_merge_rule(new_token)
-
 
         self.trained = True
 
