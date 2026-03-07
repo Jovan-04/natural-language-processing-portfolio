@@ -26,3 +26,11 @@ Creative Synthesis - unit tests for byte-pair encoding
 
 Core Practice
 * **Earned 5xp**
+
+### Fortnight 3
+Applied Exploration - Neural network with multiclass classification
+* Demo'd to TBD
+* **Earned 5xp**
+
+Core Practice
+* **Earned 5xp**
