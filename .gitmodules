@@ -1,0 +1,3 @@
+[submodule "creative-synthesis/rag-notes-search"]
+    path = creative-synthesis/rag-notes-search
+    url = https://github.com/Jovan-04/rag-notes-search.git

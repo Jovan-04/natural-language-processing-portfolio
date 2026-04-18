@@ -32,6 +32,7 @@ Core Practice
 Applied Exploration - neural network with multiclass classification
 * Demo'd to Rhys and Sagar
 * **Earned 5xp**
+* [`applied-exploration/F3_Applied_Exploration.ipynb](./applied-exploration/F3_Applied_Exploration.ipynb)
 
 Core Practice
 * **Earned 5xp**
@@ -40,6 +41,26 @@ Core Practice
 Applied Exploration - larger embeddings with AG News dataset
 * Demo'd to Jacob, Carter, and Mitchell
 * **Earned 5xp**
+* [`applied-exploration/F4_Applied_Exploration.ipynb](./applied-exploration/F4_Applied_Exploration.ipynb)
+
+Core Practice
+* **Earned 5xp**
+
+### Fortnight 5 - total 22xp
+Applied Exploration - RNN on Shakespeare
+* **Earned 5xp**
+* [`applied-exploration/F5_Applied_Exploration.ipynb](./applied-exploration/F5_Applied_Exploration.ipynb)
+
+Creative Synthesis - semantic similarity with WordNet (class workshop)
+* Presented on F5, Day 2 (4/1)
+* **Earned 10xp**
+* [`creative-synthesis/class-lecture/F5_2_Evan_Scherrer_Wordnet.ipynb`](./creative-synthesis/class-lecture/F5_2_Evan_Scherrer_Wordnet.ipynb)
+
+Creative Synthesis - RAG-based app for querying `.md` and `.txt` class notes
+* Demo'd to class
+* Project done with Carter
+* **Earned 7 xp**
+* [creative-synthesis/rag-notes-search/](./creative-synthesis/rag-notes-search/README.md)
 
 Core Practice
 * **Earned 5xp**
