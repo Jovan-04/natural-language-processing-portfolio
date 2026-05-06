@@ -73,3 +73,14 @@ Applied Exploration - Encoder/Decoder w/ GRU & LSTM
 
 Core Practice
 * **Earned 5xp**
+
+### Fortnight 7 - total 10xp
+Applied Exploration - Fine-tuning transformers to boost my ego
+* Demo'd to Carter, Mason, Coleman, and Ujan
+* **Earned 5xp**
+* [`applied-exploration/F7_Applied_Exploration.ipynb`](./applied-exploration/F7_Applied_Exploration.ipynb)
+
+Core Practice
+* **Earned 5xp**
+
+### Total XP: 99
